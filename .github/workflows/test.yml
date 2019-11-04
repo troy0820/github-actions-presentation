@@ -1,0 +1,13 @@
+name: Go build
+on:
+  push:
+    paths:
+    - '*'
+    - '!*.sum'
+jobs:
+  go-build:
+    name: Go build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: ./action/build
