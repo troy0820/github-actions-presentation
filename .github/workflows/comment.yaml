@@ -1,10 +1,10 @@
-name: Triage
+name: Comment
 on:
   issues:
     types: [opened]
 jobs:
   assignTroy:
-    name: Label Troy
+    name: Comment on issue
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
