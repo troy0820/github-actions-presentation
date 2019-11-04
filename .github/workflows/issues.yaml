@@ -1,0 +1,22 @@
+name: Triage
+on:
+  issues:
+    types: [opened]
+jobs:
+  assignTroy:
+    name: Assign Troy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Label issue
+        uses: actions/github@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: label "Troy's issue"
+      - name: Assign Troy
+        uses: actions/github@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: assign @troy0820
