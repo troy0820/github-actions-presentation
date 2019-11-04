@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Build the application and test output function
 
 cd $GITHUB_WORKSPACE
