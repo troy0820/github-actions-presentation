@@ -4,7 +4,7 @@ on:
     types: [opened]
 jobs:
   assignTroy:
-    name: Label Troy
+    name: Assign Troy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
@@ -13,4 +13,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: label "Troy's issue"
+          args: assign @troy0820

@@ -13,4 +13,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: label "Troy's issue"
+          args: comment "Thank you for opening an issue, Troy will take care of it"
