@@ -13,7 +13,7 @@ func TestHello(t *testing.T) {
 	}{
 		"Hello World":         {"World", "Hello World"},
 		"Hello 757ColorCoded": {"757ColorCoded", "Hello 757ColorCoded"},
-		"Hello fail":          {"fail", "Hello Fail"},
+		"Hello Fail":          {"Fail", "Hello Fail"},
 	}
 	for name, test := range tests {
 		got := hello.SayHello(test.input)
