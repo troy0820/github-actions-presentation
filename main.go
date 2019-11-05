@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(hello.SayHello("757ColorCoded"))
+	fmt.Println(hello.SayHello("Troy's friends who are listening to his talk"))
 }
