@@ -5,7 +5,6 @@ import (
 	"os"
 
 	"bufio"
-	"flag"
 
 	"github.com/troy0820/github-actions-presentation/hello"
 )
@@ -16,6 +15,5 @@ func main() {
 	reader.Scan()
 	var greeting string
 	fmt.Sscanf(reader.Text(), "%s", &greeting)
-	flag.Parse()
 	fmt.Println(hello.SayHello(greeting))
 }
